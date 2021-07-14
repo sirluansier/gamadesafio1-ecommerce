@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Funko Pop - Black Friday</title>
+    <script>
+        function cadastraEmail(){
+    var emailCadastrado = document.getElementById("email-input")
+
+    var email = JSON.parse(localStorage.getItem("emailUsuario"));
+
+    if(email == null){
+        localStorage.setItem("emailUsuario", "[]");
+        email = [];
+    }
+
+    var auxCadastro = {
+        email: emailCadastrado.value
+    }
+
+    email.push(auxCadastro);
+
+    localStorage.setItem("emailUsuario", JSON.stringify(email));
+    alert("Email cadastrado! Se prepare pras promoções!")
+
+    emailCadastrado.value = "";
+}
+    </script>
+</head>
+<body>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script src="app.js"></script>
+</body>
+</html>
