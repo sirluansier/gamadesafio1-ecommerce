@@ -10,6 +10,6 @@
 
 -Dados no localstorage.
 
-Veja o projeto online [clique aqui](https://lucid-mahavira-2c245c.netlify.app/)
+Veja o projeto online [clique aqui](https://funko-blackfriday.netlify.app/)
 
 ## Luan Rosa
